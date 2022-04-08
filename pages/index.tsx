@@ -1,11 +1,11 @@
 import Head from 'next/head'
+import Footer from '../src/components/Footer/Footer'
 import Hero from '../src/components/hero/Hero'
 import Menu from '../src/components/Menu/Menu'
-import styles from '../styles/Home.module.scss'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Space X clone</title>
         <link rel="icon" href="/favicon.ico" />
@@ -38,6 +38,7 @@ export default function Home() {
         title="STARSHIP TO LAND NASA ASTRONAUTS ON THE MOON"
         alt="SpaceX starlink mission" 
         imageUrl="/images/spacex-hero4.jpg"/>
+        <Footer />
      </div>
   )
 }
