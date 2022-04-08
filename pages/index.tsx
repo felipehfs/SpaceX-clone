@@ -44,13 +44,13 @@ export default function Home({ heroes = []}: HomeProps) {
 }
 
 
-export const getServerSideProps: GetStaticProps = async (context) => {
+export const getStaticProps: GetStaticProps = async () => {
   const response = await fetch("http://localhost:3000/api/heroes");
   const data = await response.json();
 
   return {
     props: {
       heroes: data,
-    }
+    },
   }
 }
