@@ -43,7 +43,15 @@
     border: 2px solid #fff;
     padding: 15px;
     width: fit-content;
+    transition: background-color .3s;
+
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
   }
+
+ 
 }
 
 @media screen and (min-width: 768px) {
