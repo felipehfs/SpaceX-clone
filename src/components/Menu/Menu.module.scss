@@ -26,6 +26,33 @@
         font-size: 1.4rem;
         text-transform: uppercase;
         font-weight: bold;
+        position: relative;
+    }
+
+    @keyframes slideLeft {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    .menuLink::after {
+        content: "";
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        height: 1px;
+        display: none;
+        animation: slideLeft 200ms;
+    }
+
+    .menuLink:hover:after {
+        display: block;
     }
 }
 
